@@ -9,7 +9,8 @@ def main():
 
     #optional arguments
     parser._optionals.title = "optionals arguments"
-    
+    parser.add_argument("-f", "--format", help="set format to output")
+
     args = parser.parse_args()
 
 
