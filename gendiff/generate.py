@@ -1,5 +1,4 @@
 import json
-from os import path
 
 
 def read_path(filename):
@@ -8,9 +7,9 @@ def read_path(filename):
 
 
 def normalize(value):
-    if value == True:
+    if value is True:
         return 'true'
-    elif value == False:
+    elif value is False:
         return 'false'
     else:
         return value
@@ -21,7 +20,7 @@ def generate_diff(filename1, filename2, output):
     difference = '{\n'
 
     json_first = read_path(filename1)
-    json_second =read_path(filename2)
+    json_second = read_path(filename2)
 
     all_keys = set(list(json_first.keys()) + list(json_second.keys()))
 
