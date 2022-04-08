@@ -7,5 +7,4 @@ SIMPLE_STRING = '''{
   - timeout: 50
   + timeout: 20
   + verbose: true
-}
-'''
+}'''
